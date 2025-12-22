@@ -10,7 +10,7 @@ export const Header = ({ label }: HeadeerProps) => {
       <h1 className={cn(
         "text-3xl font-semibold"
       )}>
-        Auth🔏
+        🔏Auth
       </h1>
       <p className="text-black text-sm font-bold">
         {label}
