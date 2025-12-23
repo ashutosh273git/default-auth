@@ -128,3 +128,61 @@ export const RegisterForm = () => {
     </CardWraper>
   );
 };
+
+// "use client";
+
+// import { useFormState } from "react-dom";
+// import { register, RegisterState } from "@/actions/register";
+// import { CardWraper } from "@/components/auth/card-wrapper";
+// import { Input } from "@/components/ui/input";
+// import { Button } from "@/components/ui/button";
+// import { FormError } from "@/components/form-error";
+// import { FormSuccess } from "@/components/form-success";
+
+// const initialState: RegisterState = {
+//   error: undefined,
+//   success: undefined,
+// };
+
+// export const RegisterForm = () => {
+//   const [state, formAction] = useFormState(register, initialState);
+
+//   return (
+//     <CardWraper
+//       headerLabel="Create an account"
+//       backButtonlabel="Already have an account?"
+//       backButtonHref="/auth/login"
+//       showSocial
+//     >
+//       <form action={formAction} className="space-y-6">
+//         <label className="font-bold text-sm">Name</label>
+//         <Input
+//           name="name"
+//           placeholder="John Doe"
+//           required
+//         />
+
+//         <Input
+//           name="email"
+//           type="email"
+//           placeholder="john.doe@example.com"
+//           required
+//         />
+
+//         <Input
+//           name="password"
+//           type="password"
+//           placeholder="******"
+//           required
+//         />
+
+//         <FormError message={state?.error} />
+//         <FormSuccess message={state?.success} />
+
+//         <Button type="submit" className="w-full">
+//           Create an account
+//         </Button>
+//       </form>
+//     </CardWraper>
+//   );
+// };
